@@ -216,3 +216,25 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Mac system files
+.DS_Store
+.DS_Store?
+**/.DS_Store
+
+# Large sequencing files
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.bam
+*.sam
+*.sra
+
+# Large index files
+*.bt2
+*.ht2
+
+# Intermediate files
+*.log
+*.tmp
