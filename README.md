@@ -15,9 +15,18 @@ The response of *Chlamydomonas reinhardtii* to environmental nitrogen levels has
 
 **DOI:** https://doi.org/10.1104/pp.110.165159 
 
-**BioProject:** PRJNA132829 
+**BioProject:** PRJNA133477
 
-**SRA Accession:** GSM600876-GSM600881
+**SRA Accession:**
+**SRA Accessions (Illumina samples):**
+| Name | Condition | SRR Accession |
+|--------|-----------|---------------|
+|  Chlamy_T_RNA_seq_1 | Nitrogen repletion (control) | SRR066643 |
+| Chlamy_T_RNA_seq_2 | Nitrogen repletion (control) | SRR066644 |
+| Chlamy_T_RNA_seq_3 | Nitrogen repletion (control) | SRR066645 |
+| Chlamy_N_RNA_seq_1 | Nitrogen deprivation | SRR066646 |
+| Chlamy_N_RNA_seq_2 | Nitrogen deprivation | SRR066647 |
+| Chlamy_N_RNA_seq_3 | Nitrogen deprivation | SRR066648 |
 
 ## Why Reanalysis?
 This effort is being conducted for both its educational and scientific value. In terms of education, it allows me to run through a bioinformatics pipeline from data to publication quality figure generation. Additionally, where appropriate, I plan to use modern tools to improve upon this 2010 study. Thus, I also hope to arrive at new scientific insights.
