@@ -4,7 +4,7 @@
 This study will attempt to reproduce and expand upon the paper "Changes in Transcript Abundance in *Chlamydomonas reinhardtii* following Nitrogen Deprivation Predict Diversion of Metabolism" by Miller et al. 
 
 ## Biological Background
-The response of *Chlamydomonas reinhardtii* to environmental nitrogen levels has important implications for both biotechnology industries [1] and the environment. Microalgae, including *C. reinhardtii*,   tend to accumulate lipid droplets in response to nutrient deprivation. This response is relevant to their use biomass producers for biofuel feedstock [1]. Additionally, nitrogen runoff from farming is a significant environmental concern. Therefore, understanding how algae respond to nutrient stimuli may help guide future actions, decisions, and policies. 
+The response of *Chlamydomonas reinhardtii* to environmental nitrogen levels has important implications for both biotechnology industries [1] and the environment. Microalgae, including *C. reinhardtii*, tend to accumulate lipid droplets in response to nutrient deprivation. This response is relevant to their use as biomass producers for biofuel feedstock [1]. Additionally, nitrogen runoff from farming is a significant environmental concern. Therefore, understanding how algae respond to nutrient stimuli may help guide future actions, decisions, and policies. 
 
 ## Original Study
 **Paper:** Changes in Transcript Abundance in *Chlamydomonas reinhardtii* following Nitrogen Deprivation Predict Diversion of Metabolism  
@@ -20,9 +20,22 @@ The response of *Chlamydomonas reinhardtii* to environmental nitrogen levels has
 **SRA Accession:** GSM600876-GSM600881
 
 ## Why Reanalysis?
-This effort is being conducted for both its educational and scientific value. In terms of education, it allows me to run through a bioinformatics pipeline from data to publication quality figure generation. Additionally, were appropriate I plan to use modern tools to improve upon this 2010 study. Thus, I also hope to arrive at new scientific insights.
+This effort is being conducted for both its educational and scientific value. In terms of education, it allows me to run through a bioinformatics pipeline from data to publication quality figure generation. Additionally, where appropriate, I plan to use modern tools to improve upon this 2010 study. Thus, I also hope to arrive at new scientific insights.
 
 ## Repository Structure
+[TO BE UPDATED]
+
+## Methods
+[TO BE UPDATED]
+
+## Key Findings
+[TO BE UPDATED]
+
+## Dependencies and Setup
+[TO BE UPDATED]
+
+## Acknowledgements
+[TO BE UPDATED]
 
 
 ## References
