@@ -1,21 +1,52 @@
 name: chlamydomonas_rnaseq
 channels:
   - conda-forge
-  - bioconda
   - defaults
+  - bioconda
 dependencies:
+  - _openmp_mutex=4.5=7_kmp_llvm
   - bzip2=1.0.8=h6c40b1e_6
-  - ca-certificates=2025.7.15=hecd8cb5_0
+  - ca-certificates=2026.4.22=hbd8a1cb_0
   - expat=2.7.1=h6d0c2b6_0
+  - hdf5=1.10.5=nompi_h500d6d3_1114
+  - icu=68.2=he49afe7_0
   - libcxx=19.1.7=haebbb44_3
   - libffi=3.4.4=hecd8cb5_1
+  - libgcc=15.2.0=h08519bb_18
+  - libgfortran=15.2.0=h7e5c614_18
+  - libgfortran5=15.2.0=hd16e46c_18
+  - libiconv=1.16=haf1e3a3_0
+  - libxml2=2.9.12=h93ec3fd_0
+  - llvm-openmp=19.1.7=ha54dae1_1
+  - ncbi-ngs-sdk=2.11.2=h247ad82_0
   - ncurses=6.5=h923df54_0
-  - openssl=3.0.17=hee2dfae_0
+  - openssl=3.6.2=hc881268_0
+  - perl=5.26.2=hbcb3906_1008
+  - perl-app-cpanminus=1.7044=pl526_1
+  - perl-business-isbn=3.004=pl526_0
+  - perl-business-isbn-data=20140910.003=pl526_0
+  - perl-carp=1.38=pl526_3
+  - perl-constant=1.33=pl526_1
+  - perl-data-dumper=2.173=pl526_0
+  - perl-encode=2.88=pl526_1
+  - perl-exporter=5.72=pl526_1
+  - perl-extutils-makemaker=7.36=pl526_1
+  - perl-file-path=2.16=pl526_0
+  - perl-file-temp=0.2304=pl526_2
+  - perl-mime-base64=3.15=pl526_1
+  - perl-parent=0.236=pl526_1
+  - perl-uri=1.76=pl526_0
+  - perl-xml-libxml=2.0132=pl526h08abf6f_1
+  - perl-xml-namespacesupport=1.12=pl526_0
+  - perl-xml-sax=1.02=pl526_0
+  - perl-xml-sax-base=1.09=pl526_0
+  - perl-xsloader=0.24=pl526_0
   - pip=26.0.1=pyhc872135_1
   - python=3.11.13=hbff2529_0
   - readline=8.3=h49f2429_0
   - setuptools=78.1.1=py311hecd8cb5_0
   - sqlite=3.50.2=hc8b0dd6_1
+  - sra-tools=2.10.1=pl526h9f37e31_0
   - tk=8.6.15=h3a5a201_0
   - tzdata=2026a=he532380_0
   - wheel=0.45.1=py311hecd8cb5_0
