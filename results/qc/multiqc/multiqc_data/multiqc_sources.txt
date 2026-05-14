@@ -1,0 +1,19 @@
+Module	Section	Sample Name	Source
+fastp	all_sections	results | qc | fastp | SRR066643	/Users/jakefrancoeur/Desktop/Projects/Chlamydomonas_rnaseq/results/qc/fastp/SRR066643_fastp.json
+fastp	all_sections	results | qc | fastp | SRR066644	/Users/jakefrancoeur/Desktop/Projects/Chlamydomonas_rnaseq/results/qc/fastp/SRR066644_fastp.json
+fastp	all_sections	results | qc | fastp | SRR066645	/Users/jakefrancoeur/Desktop/Projects/Chlamydomonas_rnaseq/results/qc/fastp/SRR066645_fastp.json
+fastp	all_sections	results | qc | fastp | SRR066646	/Users/jakefrancoeur/Desktop/Projects/Chlamydomonas_rnaseq/results/qc/fastp/SRR066646_fastp.json
+fastp	all_sections	results | qc | fastp | SRR066647	/Users/jakefrancoeur/Desktop/Projects/Chlamydomonas_rnaseq/results/qc/fastp/SRR066647_fastp.json
+fastp	all_sections	results | qc | fastp | SRR066648	/Users/jakefrancoeur/Desktop/Projects/Chlamydomonas_rnaseq/results/qc/fastp/SRR066648_fastp.json
+FastQC	all_sections	results | qc | raw | SRR066643	/Users/jakefrancoeur/Desktop/Projects/Chlamydomonas_rnaseq/results/qc/raw/SRR066643_fastqc.zip
+FastQC	all_sections	results | qc | raw | SRR066644	/Users/jakefrancoeur/Desktop/Projects/Chlamydomonas_rnaseq/results/qc/raw/SRR066644_fastqc.zip
+FastQC	all_sections	results | qc | raw | SRR066645	/Users/jakefrancoeur/Desktop/Projects/Chlamydomonas_rnaseq/results/qc/raw/SRR066645_fastqc.zip
+FastQC	all_sections	results | qc | raw | SRR066646	/Users/jakefrancoeur/Desktop/Projects/Chlamydomonas_rnaseq/results/qc/raw/SRR066646_fastqc.zip
+FastQC	all_sections	results | qc | raw | SRR066647	/Users/jakefrancoeur/Desktop/Projects/Chlamydomonas_rnaseq/results/qc/raw/SRR066647_fastqc.zip
+FastQC	all_sections	results | qc | raw | SRR066648	/Users/jakefrancoeur/Desktop/Projects/Chlamydomonas_rnaseq/results/qc/raw/SRR066648_fastqc.zip
+FastQC	all_sections	results | qc | trimmed | SRR066643	/Users/jakefrancoeur/Desktop/Projects/Chlamydomonas_rnaseq/results/qc/trimmed/SRR066643_trimmed_fastqc.zip
+FastQC	all_sections	results | qc | trimmed | SRR066644	/Users/jakefrancoeur/Desktop/Projects/Chlamydomonas_rnaseq/results/qc/trimmed/SRR066644_trimmed_fastqc.zip
+FastQC	all_sections	results | qc | trimmed | SRR066645	/Users/jakefrancoeur/Desktop/Projects/Chlamydomonas_rnaseq/results/qc/trimmed/SRR066645_trimmed_fastqc.zip
+FastQC	all_sections	results | qc | trimmed | SRR066646	/Users/jakefrancoeur/Desktop/Projects/Chlamydomonas_rnaseq/results/qc/trimmed/SRR066646_trimmed_fastqc.zip
+FastQC	all_sections	results | qc | trimmed | SRR066647	/Users/jakefrancoeur/Desktop/Projects/Chlamydomonas_rnaseq/results/qc/trimmed/SRR066647_trimmed_fastqc.zip
+FastQC	all_sections	results | qc | trimmed | SRR066648	/Users/jakefrancoeur/Desktop/Projects/Chlamydomonas_rnaseq/results/qc/trimmed/SRR066648_trimmed_fastqc.zip

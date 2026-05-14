@@ -1,0 +1,7 @@
+Sample	Passed Filter	Low Quality	Too Many N	Low Complexity	Too Short	Too Long
+results | qc | fastp | SRR066643	10153865.0	0.0	0.0	nan	6746704.0	0.0
+results | qc | fastp | SRR066644	10594922.0	0.0	0.0	nan	7708048.0	0.0
+results | qc | fastp | SRR066645	10010522.0	0.0	0.0	nan	7804428.0	0.0
+results | qc | fastp | SRR066646	8609337.0	0.0	0.0	nan	9051827.0	0.0
+results | qc | fastp | SRR066647	9100140.0	0.0	0.0	nan	8773501.0	0.0
+results | qc | fastp | SRR066648	9506918.0	0.0	0.0	nan	5715051.0	0.0

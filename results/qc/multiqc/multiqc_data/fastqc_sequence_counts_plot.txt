@@ -1,0 +1,13 @@
+Sample	Unique Reads	Duplicate Reads
+results | qc | raw | SRR066643	10302938.0	6597631.0
+results | qc | raw | SRR066644	10857907.0	7445063.0
+results | qc | raw | SRR066645	10251564.0	7563386.0
+results | qc | raw | SRR066646	10273468.0	7387696.0
+results | qc | raw | SRR066647	10208710.0	7664931.0
+results | qc | raw | SRR066648	9569696.0	5652273.0
+results | qc | trimmed | SRR066643	7334822.0	2819043.0
+results | qc | trimmed | SRR066644	7991495.0	2603427.0
+results | qc | trimmed | SRR066645	7297944.0	2712578.0
+results | qc | trimmed | SRR066646	6353957.0	2255380.0
+results | qc | trimmed | SRR066647	6708915.0	2391225.0
+results | qc | trimmed | SRR066648	7264623.0	2242295.0

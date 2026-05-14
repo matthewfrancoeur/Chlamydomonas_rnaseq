@@ -6,7 +6,7 @@
 
 # Directories
 RAW=~/Desktop/Projects/Chlamydomonas_rnaseq/data/raw
-QC=~/Desktop/Projects/Chlamydomonas_rnaseq/results/qc
+QC_RAW=~/Desktop/Projects/Chlamydomonas_rnaseq/results/qc/raw
 
 # Run FastQC on all samples
-fastqc $RAW/*.fastq.gz -o $QC
+fastqc $RAW/*.fastq.gz -o $QC_RAW
