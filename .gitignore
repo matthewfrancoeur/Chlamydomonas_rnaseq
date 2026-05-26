@@ -222,7 +222,7 @@ __marimo__/
 .DS_Store?
 **/.DS_Store
 
-# Large sequencing files
+# Large sequencing and reference files
 *.fastq
 *.fastq.gz
 *.fq
@@ -230,6 +230,14 @@ __marimo__/
 *.bam
 *.sam
 *.sra
+*.fa
+*.fa.gz
+*.fasta
+*.fasta.gz
+*.gff3
+*.gff3.gz
+*.gtf
+*.gtf.gz
 
 # Large index files
 *.bt2
