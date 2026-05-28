@@ -242,6 +242,11 @@ __marimo__/
 # Large index files
 *.bt2
 *.ht2
+*.ht2l
+
+# HISAT2 intermediate files
+splice_sites.txt
+exons.txt
 
 # Intermediate files
 *.log
