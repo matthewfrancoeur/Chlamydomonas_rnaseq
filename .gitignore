@@ -228,6 +228,7 @@ __marimo__/
 *.fq
 *.fq.gz
 *.bam
+*.bai
 *.sam
 *.sra
 *.fa
