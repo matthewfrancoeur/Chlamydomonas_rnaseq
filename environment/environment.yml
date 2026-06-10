@@ -1,4 +1,4 @@
-name: chlamydomonas_rnaseq
+name: Chlamydomonas_rnaseq
 channels:
   - conda-forge
   - defaults
@@ -125,6 +125,7 @@ dependencies:
   - spectra=0.0.11=pyhd8ed1ab_2
   - sqlite=3.50.2=hc8b0dd6_1
   - sra-tools=2.10.1=pl526h9f37e31_0
+  - stringtie=2.1.7=hf1f7dee_0
   - tiktoken=0.12.0=py311h98b24dd_3
   - tk=8.6.15=h3a5a201_0
   - tqdm=4.67.3=pyh8f84b5b_0
@@ -143,4 +144,4 @@ dependencies:
   - zlib=1.2.13=h87427d6_6
   - zstandard=0.23.0=py311h13e5629_3
   - zstd=1.5.6=h915ae27_0
-prefix: /Users/jakefrancoeur/miniconda3/envs/chlamydomonas_rnaseq
+prefix: /Users/jakefrancoeur/miniconda3/envs/Chlamydomonas_rnaseq
