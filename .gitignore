@@ -255,3 +255,8 @@ sample_list.txt
 # Intermediate files
 *.log
 *.tmp
+
+#R
+.Rproj.user
+.Rhistory
+.Rprofile
