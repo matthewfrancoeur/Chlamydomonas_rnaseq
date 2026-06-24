@@ -77,9 +77,37 @@ dds <- DESeqDataSetFromMatrix(
 # Apply variance stabilizing transformation
 vsd <- vst(dds, blind = TRUE) 
 
-#Create PCA plot
+# Create PCA plot
 plotPCA(vsd, intgroup = "condition") + theme_minimal()
 ```
 A variance stabilizing transformation is applied to the DESeq data set to stabilize gene expression level variation within each sample. A PCA plot is then created from the transformed data and colored by treatment condition. From the resulting plot, it is clear that the samples separate cleanly by treatment group along PC1, which accounts for 91% of the variation in the data set. This indicates that the nitrogen deprivation condition created a robust transcriptional response that will be picked up by DESeq2. PC2 accounts for 4% of the variation in the data set, with the replete condition showing notable separation along this axis. This, as well as greater variation along PC1, indicates potential technical variability among the replete condition, though this does not undermine the analysis given the strong distinction between sample conditions.  
 
 ### Sample Distance Heatmap
+```{r Heatmap}
+# Calculate distances between each sample
+sample_dists <- dist(t(assay(vsd))) 
+
+# Plot Heatmap
+sample_dist_matrix <- as.matrix(sample_dists)
+colors <- colorRampPalette(rev(brewer.pal(9, "Blues")))(255)
+pheatmap(
+  sample_dist_matrix,
+  color = colors,
+  clustering_distance_rows = sample_dists,
+  clustering_distance_cols = sample_dists
+)
+```
+Heatmap and dendogram analysis further confirm sample clustering by condition. Additionally, the tighter clustering of nitrogen deprivation samples is evident, consistent with the reduced variance observed along PC1 and PC2. 
+
+## DESeq2 Analysis
+```{r DESeq2 Analysis}
+# Set reference condition to replete
+dds$condition <- relevel(dds$condition, ref = "Replete")
+
+#Run DESeq2 and extracting results
+dds <- DESeq(dds)
+res <- results(dds)
+summary(res)
+```
+
+
