@@ -4,7 +4,7 @@
 This study will attempt to reproduce and expand upon the paper "Changes in Transcript Abundance in *Chlamydomonas reinhardtii* following Nitrogen Deprivation Predict Diversion of Metabolism" by Miller et al. 
 
 ## Biological Background
-The response of *Chlamydomonas reinhardtii* to environmental nitrogen levels has important implications for both biotechnology industries [1] and the environment. Microalgae, including *C. reinhardtii*, tend to accumulate lipid droplets in response to nutrient deprivation. This response is relevant to their use as biomass producers for biofuel feedstock [1]. Additionally, nitrogen runoff from farming is a significant environmental concern. Therefore, understanding how algae respond to nutrient stimuli may help guide future actions, decisions, and policies. 
+The response of *Chlamydomonas reinhardtii* to environmental nitrogen levels has important implications for both biotechnology industries (1) and the environment. Microalgae, including *C. reinhardtii*, tend to accumulate lipid droplets in response to nutrient deprivation. This response is relevant to their use as biomass producers for biofuel feedstock (1). Additionally, nitrogen runoff from farming is a significant environmental concern. Therefore, understanding how algae respond to nutrient stimuli may help guide future actions, decisions, and policies. 
 
 ## Original Study
 **Paper:** Changes in Transcript Abundance in *Chlamydomonas reinhardtii* following Nitrogen Deprivation Predict Diversion of Metabolism  
@@ -62,6 +62,8 @@ StringTie version 2.1.7 (13) was used for transcript quantification. First, the 
 ### Count Matrix Generation (prepDE)
 The quantified GTF files from each sample were then converted to count matrices in CSV format for use by DESeq2. This was done using prepDE.py, which is a Python script included in StringTie (13). A sample list file containing sample names and GTF file paths was generated and passed to prepDE.py using the -i flag. Finally, the flags -g and -t were specified to generate both a gene count matrix and transcript count matrix CSV. 
 [Full parameters documented in scripts/10_prepDE.sh](scripts/10_prepDE.sh)
+### DESeq2 Analysis 
+Differential gene expression analysis was done using DESeq2 (13). This differs from the work of Miller et al., which primarily uses EdgeR (1).  PCA and sample distance heatmap analysis verified expected sample clustering by condition. Using the 5% FDR and 2-fold expression change requirements outlined by Miller et al. (1), 3,370 genes were found to be differentially expressed. Of these, 1,535 were upregulated and 1,835 were downregulated. In comparison, Miller et al. found 4,003 genes to be differentially expressed, with 2,128 upregulated and 1,875 downregulated (1). Thus, an overall similar number of genes were differentially expressed in this modern reanalysis, with a strikingly similar number of downregulated genes. That being said, it is unclear why the differences in differentially expressed genes appear to be concentrated in the upregulated genes. For full details on this analysis, see [DESeq2 analysis document](https://matthewfrancoeur.github.io/Chlamydomonas_rnaseq/R/deseq2_analysis.html)
 ## Key Findings
 
 [TO BE UPDATED]
@@ -79,12 +81,12 @@ These sequence data were produced by the US Department of Energy Joint Genome In
 3.	Andrews S. Babraham Bioinformatics - FastQC A Quality Control tool for High Throughput Sequence Data [Internet]. [cited 2026 May 21]. Available from: https://www.bioinformatics.babraham.ac.uk/projects/fastqc/
 4.	Hansen KD, Brenner SE, Dudoit S. Biases in Illumina transcriptome sequencing caused by random hexamer priming. Nucleic Acids Res. 2010 Jul;38(12):e131. doi:10.1093/nar/gkq224 PubMed PMID: 20395217; PubMed Central PMCID: PMC2896536.
 5.	Merchant SS, Prochnik SE, Vallon O, Harris EH, Karpowicz SJ, Witman GB, et al. The Chlamydomonas Genome Reveals the Evolution of Key Animal and Plant Functions. Science. 2007 Oct 12;318(5848):245–50. doi:10.1126/science.1143609 PubMed PMID: 17932292; PubMed Central PMCID: PMC2875087.
-6.	Chen S, Zhou Y, Chen Y, Gu J. fastp: an ultra-fast all-in-one FASTQ preprocessor. Bioinformatics. 2018 Sep 1;34(17):i884–90. doi:10.1093/bioinformatics/bty560 PubMed PMID: 30423086; PubMed Central PMCID: PMC6129281.
-7.	Ewels P, Magnusson M, Lundin S, Käller M. MultiQC: summarize analysis results for multiple tools and samples in a single report. Bioinformatics. 2016;32(19):3047. doi:10.1093/bioinformatics/btw354
-8.	Craig RJ, Gallaher SD, Shu S, Salomé PA, Jenkins JW, Blaby-Haas CE, et al. The Chlamydomonas Genome Project, version 6: Reference assemblies for mating-type plus and minus strains reveal extensive structural mutation in the laboratory. Plant Cell. 2023 Feb 1;35(2):644–72. doi:10.1093/plcell/koac347
-9.	Blaby IK, Blaby-Haas CE, Tourasse N, Hom EFY, Lopez D, Aksoy M, et al. The Chlamydomonas genome project: a decade on. Trends Plant Sci. 2014 Oct 1;19(10):672–80. doi:10.1016/j.tplants.2014.05.008
-10.	Kim D, Paggi JM, Park C, Bennett C, Salzberg SL. Graph-based genome alignment and genotyping with HISAT2 and HISAT-genotype. Nat Biotechnol. 2019 Aug;37(8):907–15. doi:10.1038/s41587-019-0201-4
-11.	Pertea G, Pertea M. GFF Utilities: GffRead and GffCompare [Internet]. F1000Research; 2020 [cited 2026 Jun 8]. Available from: https://f1000research.com/articles/9-304 doi:10.12688/f1000research.23297.2
-12.	Danecek P, Bonfield JK, Liddle J, Marshall J, Ohan V, Pollard MO, et al. Twelve years of SAMtools and BCFtools. GigaScience. 2021 Feb 1;10(2):giab008. doi:10.1093/gigascience/giab008
-13.	Pertea M, Pertea GM, Antonescu CM, Chang TC, Mendell JT, Salzberg SL. StringTie enables improved reconstruction of a transcriptome from RNA-seq reads. Nat Biotechnol. 2015 Mar;33(3):290–5. doi:10.1038/nbt.3122 PubMed PMID: 25690850; PubMed Central PMCID: PMC4643835.
+6.	Ewels P, Magnusson M, Lundin S, Käller M. MultiQC: summarize analysis results for multiple tools and samples in a single report. Bioinformatics. 2016;32(19):3047. doi:10.1093/bioinformatics/btw354
+7.	Craig RJ, Gallaher SD, Shu S, Salomé PA, Jenkins JW, Blaby-Haas CE, et al. The Chlamydomonas Genome Project, version 6: Reference assemblies for mating-type plus and minus strains reveal extensive structural mutation in the laboratory. Plant Cell. 2023 Feb 1;35(2):644–72. doi:10.1093/plcell/koac347
+8.	Blaby IK, Blaby-Haas CE, Tourasse N, Hom EFY, Lopez D, Aksoy M, et al. The Chlamydomonas genome project: a decade on. Trends Plant Sci. 2014 Oct 1;19(10):672–80. doi:10.1016/j.tplants.2014.05.008
+9.	Kim D, Paggi JM, Park C, Bennett C, Salzberg SL. Graph-based genome alignment and genotyping with HISAT2 and HISAT-genotype. Nat Biotechnol. 2019 Aug;37(8):907–15. doi:10.1038/s41587-019-0201-4
+10.	Pertea G, Pertea M. GFF Utilities: GffRead and GffCompare [Internet]. F1000Research; 2020 [cited 2026 Jun 8]. Available from: https://f1000research.com/articles/9-304 doi:10.12688/f1000research.23297.2
+11.	Danecek P, Bonfield JK, Liddle J, Marshall J, Ohan V, Pollard MO, et al. Twelve years of SAMtools and BCFtools. GigaScience. 2021 Feb 1;10(2):giab008. doi:10.1093/gigascience/giab008
+12.	Pertea M, Pertea GM, Antonescu CM, Chang TC, Mendell JT, Salzberg SL. StringTie enables improved reconstruction of a transcriptome from RNA-seq reads. Nat Biotechnol. 2015 Mar;33(3):290–5. doi:10.1038/nbt.3122 PubMed PMID: 25690850; PubMed Central PMCID: PMC4643835.
+13.	Love MI, Huber W, Anders S. Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2. Genome Biol. 2014 Dec 5;15(12):550. doi:10.1186/s13059-014-0550-8
 
